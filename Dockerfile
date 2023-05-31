@@ -1,5 +1,7 @@
 FROM python:alpine
 
+RUN apk add --no-cache g++
+
 WORKDIR /app
 
 COPY requirements/backend.in .
